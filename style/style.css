@@ -103,5 +103,23 @@ a{
     /*font-family: 'wiatr';*/
     font-family: 'Rock Salt', cursive;
     text-shadow: rgba(0,0,0,0.9) 1px 2px 10px;
+}
+@media all and (min-width: 768px){
+    .main-content{
+        flex-direction: row;
+        overflow: hidden;
+    }
+    .thumbnail-list{
+        flex-direction: column;
+        order: 0;
+        margin-left: 20px;
 
+    }
+    .list-element{
+        max-width: 260px;
+        margin-right: 20px;
+    }
+    .list-element + .list-element{
+        margin-top: 20px;
+    }
 }
