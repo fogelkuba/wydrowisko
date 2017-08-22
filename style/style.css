@@ -17,6 +17,9 @@ body{
     background: rgb(149,194,215);
     font-family: 'Futura', 'Helvetica', 'Arial', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 .text-logo{
     background: #fff;
     text-align: center;
@@ -24,20 +27,20 @@ body{
     /*font-family: 'jezioro';*/
     font-size: 37px;
 }
-.main-title{
+.main-header{
     flex: 0 1 auto;
-}
-a{
-    text-decoration: none;
 }
 .main-content{
     flex: 1 1 auto;
-    /*display: flex;*/
-    /*problem^*/
+    /*problem\|/*/
+    display: flex;
     flex-direction: column;
 }
 .thumbnail-list{
     flex: 0 1 auto;
+    order: 2;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     padding: 0;
     white-space: nowrap;
@@ -47,12 +50,14 @@ a{
 .list-element{
     /*display: block;*/
     display: inline-block;
-    width: 120px;
+    /*width: 120px;*/
+    min-width: 120px;
+    max-height: 120 px;
     border: 1px solid #fff;
 }
-.list-element + .list-element{
+/*.list-element + .list-element{
     margin-top: 10px;
-}
+}*/
 
 .thumbnail-image{
     display: block;
@@ -70,8 +75,20 @@ a{
     font-size: 18px;
 }
 .big-img-container{
-
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.big-img-frame{
+    position: relative;
+    text-align: center;
 }
 .big-img{
     width: 90%;
+}
+.big-img-title{
+    position: absolute;
+    bottom: -16px;
+    left: 4px;
 }
