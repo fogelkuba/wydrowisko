@@ -15,7 +15,7 @@ body{
     flex-direction: column;
     font-size: 10px;
     background: rgb(149,194,215);
-    font-family: 'Futura', 'Helvetica', sans-serif;
+    font-family: 'Futura', 'Helvetica', 'Arial', sans-serif;
 }
 .text-logo{
     background: #fff;
@@ -32,7 +32,8 @@ a{
 }
 .main-content{
     flex: 1 1 auto;
-    display: flex;
+    /*display: flex;*/
+    /*problem^*/
     flex-direction: column;
 }
 .thumbnail-list{
