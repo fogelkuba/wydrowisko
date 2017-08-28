@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <!--
-browser-sync start --server --files "style/*.css, *.html"
+browser-sync start --server --files "style/*.css, *.html, js/*.js"
 -->
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wydrowisko</title>
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
@@ -38,7 +38,7 @@ browser-sync start --server --files "style/*.css, *.html"
         </li>
         <li class="list-element">
             <a href="obrazy/wydra3.jpg" data-img-type="trigger"
-                                        data-img-title="Relax"
+                                        data-img-title="Relax!!"
                                         data-img-url="obrazy/wydra3.jpg">
                     <img class="thumbnail-image" src="obrazy/wydra3.jpg" alt="Moryc">
                     <span class="thumbnail-title">Moryc</span>
@@ -64,10 +64,12 @@ browser-sync start --server --files "style/*.css, *.html"
     </ul>
     <div class="big-img-container">
         <div class="big-img-frame">
-            <img class="big-img" src="obrazy/wydra1.jpg" alt="">
-            <span class="big-img-title">La Dolce Vita!</span>
+            <img class="big-img" data-img-type="target" src="obrazy/wydra1.jpg" alt="">
+            <span class="big-img-title" data-img-type="title">La Dolce Vita!</span>
         </div>
     </div>
 </main>
+<script src="js/app.js" charset="utf-8"></script>
+
 </body>
 </html>
